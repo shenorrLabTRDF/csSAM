@@ -1,0 +1,17 @@
+# Sample .travis.yml for R projects.
+#
+# See README.md for instructions, or for more configuration options,
+# see the wiki:
+#   https://github.com/craigcitro/r-travis/wiki
+
+language: r
+bioc_required: true
+sudo: required
+r_binary_packages:
+  - ggplot2
+  - stringi
+cache: packages
+r:
+  - release
+  - devel
+warnings_are_errors: false
